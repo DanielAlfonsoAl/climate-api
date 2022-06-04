@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asistente de clima</title>
+  <link rel="icon" href="./icono.png" >
+  <link rel="stylesheet" href="clima.css">
+
+</head>
+<body>
+  <div class="contenido" >
+    <div class="clima" id="clima">
+      <div class="form">
+      <h1>Bienvenidos al clima</h1>
+      <input type="text" id="contenido" placeholder="ingresa la ciudad" class="casilla">  <br>
+      <strong>La temperatura actual es de:</strong><strong id="temperatura"> </strong> <br>
+      <img id="icon" src="" alt=""><br>
+      <input type="button" value="consultar" class="consultar" onclick="consultarClima()">
+      
+      </div>
+    </div>
+  </div>
+ 
+  <script src="clima.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+margin: 0;
+padding: 0;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  background: url(fondo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contenido{
+  width: 100%;
+}
+.clima{
+  border: solid 3px black;
+  backdrop-filter: blur(2px);
+  background-color: rgba(128, 128, 128, 0.507);
+  width: 30%;
+  background-position-y: bottom;
+  border-radius: 8px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10px;
+  margin-top: 15%;
+}
+.form{
+  text-align: center;
+}
+.casilla{
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+.casilla::placeholder{
+  text-align: center;
+}
+.consultar{
+  background-color: rgb(192, 186, 186);
+  border-radius: 8px;
+  font-size: 20pt;
+  padding: 2px 5px;
+}
+
+.consultar:hover{
+cursor: pointer;
+transform: scale(1.1);
+}
+.consultar:active{
+  background-color: black;
+  color: white;
+}
+#temperatura{
+  color:rgb(46, 27, 27);
+  margin-left: 5px;
+}
+
+strong{
+  color: white;
+  font-weight: bold;
+}
+#icon{
+  width: 65px;
+}
+@media screen and (max-width: 937px){
+
+.clima{
+  transform: scale(0.9);
+  width: 50%;
+  margin-top: 50%;
+}
+.contenido{
+  margin: auto;
+}
+.casilla {
+  width: 70%;
+}
+
+} 
