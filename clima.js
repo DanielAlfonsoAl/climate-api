@@ -1,3 +1,4 @@
+
 function consultarClima(){
   document.getElementById("clima").style="height : 300px"
   let ciudad = document.getElementById("contenido").value
@@ -14,11 +15,19 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=96ddeac
    let info = JSON.parse(data);
    let temperatura = (parseInt(info.main.temp) - (273.15)) .toFixed(2);
    let icon= (info.weather[0].icon);
-   document.getElementById("temperatura").innerHTML = (temperatura)
+   document.getElementById("temperatura").innerHTML = (temperatura + " C°")
    document.getElementById("icon").setAttribute("src",`http://openweathermap.org/img/wn/${icon}@2x.png`)
   })
   .catch(error =>{
     alert("Upss.. ha ocurrido un error")
+    console.log(error)
   });
 } 
+document.addEventListener("keydown",(e) =>{
+  if(e.keyCode == 13){
+    consultarClima();
+  }
+})
+
+
 

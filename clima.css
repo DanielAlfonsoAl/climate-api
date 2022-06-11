@@ -68,6 +68,9 @@ strong{
 #icon{
   width: 65px;
 }
+.form h1 {
+padding: 20px;
+}
 @media screen and (max-width: 937px){
 
 .clima{
